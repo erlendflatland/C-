@@ -95,21 +95,7 @@ void scopedLockWithTimeout(bool lockOrder) {
 
 
 int main() {
-    std::cout << "init" << std::endl;
 
-    // Create two mutexes
-    std::mutex mtxA, mtxB;
-
-    // Start the threads
-    std::cout << "Starting Thread 1 (locks mutex1 -> mutex2)" << std::endl;
-    std::thread t1(deadLockedWithTimeout, true); // Thread 1 locks mutex1 -> mutex2
-
-    std::cout << "Starting Thread 2 (locks mutex2 -> mutex1)" << std::endl;
-    std::thread t2(deadLockedWithTimeout, false); // Thread 2 locks mutex2 -> mutex1
-
-    // Wait for both threads to finish
-    t1.join();
-    t2.join();
 
 
     // Add a separation between deadlock and scoped lock test
@@ -126,7 +112,21 @@ int main() {
     t3.join();
     t4.join();
 
-    return 0;
+    std::cout << "\n--- Now testing the deadlock \n" << std::endl;
+
+    // Create two mutexes
+    std::mutex mtxA, mtxB;
+
+    // Start the threads
+    std::cout << "Starting Thread 1 (locks mutex1 -> mutex2)" << std::endl;
+    std::thread t1(deadLockedWithTimeout, true); // Thread 1 locks mutex1 -> mutex2
+
+    std::cout << "Starting Thread 2 (locks mutex2 -> mutex1)" << std::endl;
+    std::thread t2(deadLockedWithTimeout, false); // Thread 2 locks mutex2 -> mutex1
+
+    // Wait for both threads to finish
+    t1.join();
+    t2.join();
     
 
     return 0;
