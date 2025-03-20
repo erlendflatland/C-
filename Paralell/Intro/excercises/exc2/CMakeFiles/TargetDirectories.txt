@@ -1,0 +1,3 @@
+/workspaces/C-/Paralell/Intro/excercises/exc2/CMakeFiles/rebuild_cache.dir
+/workspaces/C-/Paralell/Intro/excercises/exc2/CMakeFiles/edit_cache.dir
+/workspaces/C-/Paralell/Intro/excercises/exc2/CMakeFiles/ex2.dir

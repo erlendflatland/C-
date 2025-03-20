@@ -1,0 +1,4 @@
+/workspaces/C-/Paralell/Intro/exc/build/CMakeFiles/rebuild_cache.dir
+/workspaces/C-/Paralell/Intro/exc/build/CMakeFiles/exc1LockGuards.dir
+/workspaces/C-/Paralell/Intro/exc/build/CMakeFiles/edit_cache.dir
+/workspaces/C-/Paralell/Intro/exc/build/CMakeFiles/exc1.dir

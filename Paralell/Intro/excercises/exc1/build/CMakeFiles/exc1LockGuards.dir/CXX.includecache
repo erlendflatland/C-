@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/C-/Paralell/Intro/exc/build/exc1LockGuards.cpp
+thread
+-
+memory
+-
+mutex
+-
+iostream
+-
+future
+-
+

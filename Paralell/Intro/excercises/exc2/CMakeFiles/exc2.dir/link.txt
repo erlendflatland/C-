@@ -1,0 +1,1 @@
+/usr/bin/c++     CMakeFiles/exc2.dir/ex2.cpp.o  -o exc2  -lpthread 
