@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/C-/Paralell/Intro/excercises/ex4/ex4.cpp
+iostream
+-
+thread
+-
+mutex
+-
+shared_mutex
+-
+chrono
+-
+
