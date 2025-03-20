@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/workspaces/C-/Paralell/Intro/excercises/ex3/ex3.cpp
+iostream
+-
+thread
+-
+mutex
+-
+chrono
+-
+
